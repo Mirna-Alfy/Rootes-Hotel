@@ -114,6 +114,41 @@
                 font-size: 2.5em;
             }
         }
+        .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none; /* إزالة أيقونة Bootstrap الافتراضية */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
+  /* تخصيص أيقونة زر السابق */
+  .carousel-control-prev-icon::after {
+    content: '\f104';  /* أيقونة السهم لليسار من Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  /* تخصيص أيقونة زر التالي */
+  .carousel-control-next-icon::after {
+    content: '\f105';  /* أيقونة السهم لليمين من Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  /* يمكن تعديل المزيد من الخصائص مثل الظلال أو التباعد حسب الرغبة */
+  .carousel-control-prev, .carousel-control-next {
+    width: auto;
+  }
+
         .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -265,7 +300,7 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -280,16 +315,17 @@
         <p class="text-black">غرفة مرتبة، إطلالة جميلة مع ضيافة حلا ومشروب مجاني</p>
         <p class="text-black">استمتع بفطور شهي بسعر مميز يبدأ من 25 ريال وغداء 40 ريال</p>
         <p class="text-black">احتفل معنا… واستمتع باللحظة</p>
-<!--         <h3 class="text-black">للحجز والاستفسار</h3>
-        <p class="text-black">أرسل لنا واتساب أو اتصل بنا على الأرقام الخاصة بنا:</p>
-      <p class="text-black">+966 55 509 0715 | +966 55 602 9683 | 012 556 6005</p>  -->
+        <!-- <h3 class="text-black">للحجز والاستفسار</h3>
+        <p class="text-black">أرسل لنا واتساب أو اتصل بنا على الأرقام التالية:</p>
+        <p class="text-black">+966 55 509 0715 | +966 55 602 9683 | 012 556 6005</p> -->
       </section>
 
     <!-- Features Section -->
     <section id="contact" class="container mt-5 pt-5">
         <h2 class="text-black">تواصل معنا</h2>
         <p class="text-black">يمكنك التواصل معنا عبر الأرقام التالية:</p>
-        <p class="text-black" style="direction: ltr;"> +966 55 602 9683 | +966 55 509 0715 | 012 556 6005</p>
+
+        <p class="text-black" style="direction: ltr;">+966 55 509 0715 | +966 55 602 9683 | 012 556 6005</p>
         
         <!-- Social Media Links -->
         <p class="text-black">يمكنك ايضا متابعتنا من خلال حساباتنا عبر:</p>
